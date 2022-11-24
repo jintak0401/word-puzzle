@@ -1,0 +1,19 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard-dynamic-subset.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: "Pretendard", sans-serif;
+    }
+
+    ::selection {
+        @apply bg-primary-100 text-primary-500 dark:bg-primary-800 dark:text-primary-200;
+    }
+
+    ::-moz-selection {
+        @apply bg-primary-100 text-primary-500;
+    }
+}
