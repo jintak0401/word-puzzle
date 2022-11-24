@@ -1,0 +1,11 @@
+{
+  "name": "word-puzzle",
+  "version": "0.1.0",
+  "repository": "https://github.com/jintak0401/word-puzzle",
+  "author": "Time Gambit <jintak0401@naver.com>",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "packageManager": "yarn@3.3.0"
+}
