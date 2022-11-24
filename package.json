@@ -1,11 +1,20 @@
 {
   "name": "word-puzzle",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "repository": "https://github.com/jintak0401/word-puzzle",
   "author": "Time Gambit <jintak0401@naver.com>",
   "workspaces": [
     "client",
     "server"
   ],
+  "scripts": {
+    "build:client": "yarn workspace client build",
+    "dev:client": "yarn workspace client dev",
+    "start:client": "yarn workspace client start",
+    "dev:server": "yarn workspace server start:dev",
+    "start:server": "yarn workspace server start",
+    "prod:server": "yarn workspace server start:prod",
+    "build": "yarn build:client && yarn build:server"
+  },
   "packageManager": "yarn@3.3.0"
 }
